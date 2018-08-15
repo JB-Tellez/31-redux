@@ -1,9 +1,10 @@
 import uuid from 'uuid/v4';
 
-// Actions
+// Action types
 export const CATEGORY_CREATE = 'Category/CATEGORY_CREATE';
 export const CATEGORY_DESTROY = 'Category/CATEGORY_DESTROY';
 export const CATEGORY_UPDATE = 'Category/CATEGORY_UPDATE';
+
 
 // Reducer
 export default function reducer(state = {categories:[]}, action) {
@@ -11,6 +12,7 @@ export default function reducer(state = {categories:[]}, action) {
   const {type, payload} = action;
   
   switch (type) {
+
     case CATEGORY_CREATE:
       payload.id = uuid();
       payload.timestamp = new Date();
