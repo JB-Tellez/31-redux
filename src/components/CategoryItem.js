@@ -21,6 +21,7 @@ class CategoryItem extends Component {
 
   onUpdate = (category) => {
     this.props.updateCategory(category);
+    this.setState({editing: false});
   }
 
   render() {
