@@ -1,9 +1,9 @@
 import uuid from 'uuid/v4';
 
 // Actions
-const CATEGORY_CREATE = 'Category/CATEGORY_CREATE';
-const CATEGORY_DESTROY = 'Category/CATEGORY_DESTROY';
-const CATEGORY_UPDATE = 'Category/CATEGORY_UPDATE';
+export const CATEGORY_CREATE = 'Category/CATEGORY_CREATE';
+export const CATEGORY_DESTROY = 'Category/CATEGORY_DESTROY';
+export const CATEGORY_UPDATE = 'Category/CATEGORY_UPDATE';
 
 // Reducer
 export default function reducer(state = {categories:[]}, action) {
